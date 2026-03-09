@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gizlilik Politikası – Annenin Yolu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #E88B9C;
+      --bg: #FFF5F0;
+      --text: #2D1B1E;
+      --muted: #8C6B72;
+      --border: #F0D5DA;
+      --card: #FFFFFF;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: 'Fraunces', serif;
+      font-size: 28px;
+      font-weight: 300;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      font-style: italic;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #E88B9C15 0%, #FFF5F0 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 300;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 20px;
+      background: var(--primary);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .section p, .section li {
+      color: #4A3038;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .section li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      background: #E88B9C12;
+      border-left: 3px solid var(--primary);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .date-badge {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Annenin <span>Yolu</span></div>
+</header>
+
+<div class="hero">
+  <h1>Gizlilik Politikası</h1>
+  <p>Kişisel verileriniz bizim için değerlidir.</p>
+  <span class="date-badge">Son güncelleme: Mart 2026</span>
+</div>
+
+<main>
+
+  <div class="section">
+    <h2>Genel Bilgi</h2>
+    <p>Annenin Yolu uygulaması ("uygulama"), kullanıcılarına gebelik takibi ve sağlık bilgisi sunan bir mobil uygulamadır. Bu gizlilik politikası, uygulamayı kullandığınızda hangi verilerin toplandığını, nasıl kullanıldığını ve haklarınızın neler olduğunu açıklar.</p>
+    <div class="highlight">Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Apple App Store gereksinimleri kapsamında hazırlanmıştır.</div>
+  </div>
+
+  <div class="section">
+    <h2>Toplanan Veriler</h2>
+    <p>Uygulama aşağıdaki veri türlerini toplayabilir:</p>
+    <ul>
+      <li><strong>Hesap bilgileri:</strong> E-posta adresi ve şifre (Firebase Authentication aracılığıyla)</li>
+      <li><strong>Profil bilgileri:</strong> Gebelik haftası, doğum tarihi tahmini, kullanıcı notları (Firebase Firestore)</li>
+      <li><strong>Sağlık verileri:</strong> Semptom kayıtları, ilaç hatırlatıcıları, randevu bilgileri</li>
+      <li><strong>Cihaz bilgileri:</strong> Bildirim izinleri, kamera/galeri erişimi (yalnızca kullanıcı isteğiyle)</li>
+      <li><strong>Kullanım verileri:</strong> Reklam gösterimi için anonim kullanım istatistikleri (Google AdMob)</li>
+      <li><strong>Abonelik bilgileri:</strong> Satın alma geçmişi (RevenueCat — ödeme bilgileri App Store tarafından yönetilir)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Verilerin Kullanım Amacı</h2>
+    <ul>
+      <li>Uygulamanın temel işlevlerini sağlamak (gebelik takibi, hatırlatıcılar)</li>
+      <li>Kullanıcı hesabını oluşturmak ve yönetmek</li>
+      <li>Kişiselleştirilmiş içerik sunmak</li>
+      <li>Uygulama içi reklamları göstermek (AdMob)</li>
+      <li>Premium abonelik işlemlerini yönetmek (RevenueCat)</li>
+      <li>Uygulama performansını iyileştirmek</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Üçüncü Taraf Hizmetler</h2>
+    <p>Uygulama aşağıdaki üçüncü taraf hizmetleri kullanmaktadır:</p>
+    <ul>
+      <li><strong>Google Firebase:</strong> Kimlik doğrulama ve veri depolama</li>
+      <li><strong>Google AdMob:</strong> Reklam gösterimi (anonim veri kullanır)</li>
+      <li><strong>RevenueCat:</strong> Abonelik yönetimi</li>
+    </ul>
+    <div class="highlight">Bu hizmetlerin kendi gizlilik politikaları mevcuttur. Verileriniz üçüncü taraflara satılmaz veya kiralanmaz.</div>
+  </div>
+
+  <div class="section">
+    <h2>Veri Güvenliği</h2>
+    <p>Verileriniz Firebase altyapısında şifreli olarak saklanır. Şifreler hiçbir zaman düz metin olarak tutulmaz. Uygulama, verilerinize yetkisiz erişimi önlemek için endüstri standardı güvenlik önlemleri kullanır.</p>
+  </div>
+
+  <div class="section">
+    <h2>Çocukların Gizliliği</h2>
+    <p>Uygulama 13 yaşın altındaki bireylere yönelik değildir ve bu yaş grubundan bilerek veri toplanmaz. Böyle bir durumdan haberdar olunması halinde ilgili veriler derhal silinir.</p>
+  </div>
+
+  <div class="section">
+    <h2>KVKK Kapsamındaki Haklarınız</h2>
+    <p>6698 sayılı KVKK uyarınca aşağıdaki haklara sahipsiniz:</p>
+    <ul>
+      <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+      <li>İşlenen verileriniz hakkında bilgi talep etme</li>
+      <li>Verilerinizin düzeltilmesini veya silinmesini talep etme</li>
+      <li>Verilerin işlenmesine itiraz etme</li>
+    </ul>
+    <p>Bu haklarınızı kullanmak için: <a href="mailto:erhanertoren10@gmail.com">erhanertoren10@gmail.com</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Hesap ve Veri Silme</h2>
+    <p>Hesabınızı ve tüm verilerinizi silmek için uygulama içindeki "Hesabı Sil" seçeneğini kullanabilir ya da <a href="mailto:erhanertoren10@gmail.com">erhanertoren10@gmail.com</a> adresine e-posta gönderebilirsiniz. Talepler 30 gün içinde işleme alınır.</p>
+  </div>
+
+  <div class="section">
+    <h2>İletişim</h2>
+    <p>Bu politikayla ilgili sorularınız için:</p>
+    <p><strong>E-posta:</strong> <a href="mailto:erhanertoren10@gmail.com">erhanertoren10@gmail.com</a></p>
+    <p><strong>Web:</strong> <a href="https://anneninyolu.com">anneninyolu.com</a></p>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Annenin Yolu · <a href="/kullanim-kosullari.html">Kullanım Koşulları</a></p>
+</footer>
+
+</body>
+</html>
